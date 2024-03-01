@@ -2,7 +2,7 @@
   <div class="form-row">
     <mat-form-field appearance="fill">
       <mat-label>{{ 'user.email' | translate }}</mat-label>
-      <input matInput formControlName="email" required [data-qa]="'email'" />
+      <input matInput formControlName="email" type="email" required [data-qa]="'email'" />
       <mat-error [data-qa]="'invalid-email-error'" *ngIf="form.get('email')?.invalid">{{
         getErrorMessage('email')
       }}</mat-error>
